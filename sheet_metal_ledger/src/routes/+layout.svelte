@@ -1,6 +1,8 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import '../../static/css/materialize.min.css';
+	import '../../static/js/materialize.min';
 </script>
 
 <div class="app">
