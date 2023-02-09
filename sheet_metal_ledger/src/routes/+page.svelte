@@ -8,7 +8,7 @@
 			板金台帳App
 </span>
 <section>
-	<table class="responsive-table">
+	<table class="table">
 		<tr>
 			<th>言語</th>
 			<td>Python</td>

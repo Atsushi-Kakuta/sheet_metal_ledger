@@ -15,7 +15,9 @@
 	font-family: var(--font-body);
 	color: var(--color-text);
 }
-
+.table {
+	display: table;
+}
 body {
 	min-height: 100vh;
 	margin: 0;

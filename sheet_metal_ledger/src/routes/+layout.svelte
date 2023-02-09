@@ -1,14 +1,26 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-	import '../../static/css/materialize.min.css';
-	import '../../static/js/materialize.min';
+	import 'virtual:windi.css';
 </script>
 
 <div class="app">
 	<Header />
 
 	<main>
+		<table class="table">
+			<tr>
+				<th>test</th>
+				<th>言語</th>
+				<td>Python</td>
+				<td>C++</td>
+			</tr>
+			<tr>
+				<th>タイプ</th>
+				<td>スクリプト型言語</td>
+				<td>コンパイラ型言語</td>
+			</tr>
+		</table>
 		<slot />
 	</main>
 
