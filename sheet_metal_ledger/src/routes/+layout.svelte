@@ -1,17 +1,16 @@
 <script>
-	import Header from './Header.svelte';
+	import Header from '../lib/components/Header.svelte';
 	import './styles.css';
+	import "../app.css";
 </script>
-
-<div class="app">
 	<Header />
-	<main>
-	</main>
+<div class="app">
+	<slot />
+</div>
 
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 	</footer>
-</div>
 
 <style>
 	.app {

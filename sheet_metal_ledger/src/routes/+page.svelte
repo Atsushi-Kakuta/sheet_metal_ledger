@@ -2,13 +2,12 @@
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
-
 </svelte:head>
 <span class="welcome">
 			板金台帳App
 </span>
 <section>
-	<table class="table">
+	<table class="table-auto">
 		<tr>
 			<th>言語</th>
 			<td>Python</td>
@@ -21,8 +20,14 @@
 		</tr>
 	</table>
 </section>
+<h1 class="text-3xl font-bold underline">
+	Hello world!
+</h1>
 
-<style>
+<style lang="postcss">
+	:global(html) {
+		background-color: theme(colors.gray.100);
+	}
 	section {
 		display: flex;
 		flex-direction: column;
