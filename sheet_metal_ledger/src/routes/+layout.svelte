@@ -1,33 +1,16 @@
 <script>
-	import Header from './Header.svelte';
+	import Header from '../lib/components/Header.svelte';
 	import './styles.css';
-	import 'virtual:windi.css';
+	import "../app.css";
 </script>
-
-<div class="app">
 	<Header />
-
-	<main>
-		<table class="table">
-			<tr>
-				<th>test</th>
-				<th>言語</th>
-				<td>Python</td>
-				<td>C++</td>
-			</tr>
-			<tr>
-				<th>タイプ</th>
-				<td>スクリプト型言語</td>
-				<td>コンパイラ型言語</td>
-			</tr>
-		</table>
-		<slot />
-	</main>
+<div class="app">
+	<slot />
+</div>
 
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 	</footer>
-</div>
 
 <style>
 	.app {
