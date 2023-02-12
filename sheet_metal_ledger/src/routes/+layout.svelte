@@ -1,27 +1,11 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-	import 'virtual:windi.css';
 </script>
 
 <div class="app">
 	<Header />
-
 	<main>
-		<table class="table">
-			<tr>
-				<th>test</th>
-				<th>言語</th>
-				<td>Python</td>
-				<td>C++</td>
-			</tr>
-			<tr>
-				<th>タイプ</th>
-				<td>スクリプト型言語</td>
-				<td>コンパイラ型言語</td>
-			</tr>
-		</table>
-		<slot />
 	</main>
 
 	<footer>
