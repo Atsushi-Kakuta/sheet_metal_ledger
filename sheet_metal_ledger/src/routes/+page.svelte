@@ -2,6 +2,8 @@
     import Table from "../lib/components/Table.svelte";
     import Button from "../lib/components/Button.svelte";
     import Modal from "../lib/components/Modal.svelte";
+
+    let defaultModal;
 </script>
 
 <svelte:head>
@@ -71,8 +73,8 @@
             </div>
         </div>
         <div class="text-end">
-            <Button kind="Create" textContent="新規作成"/>
+            <Modal />
         </div>
     </div>
 </div>
-<Modal />
+
