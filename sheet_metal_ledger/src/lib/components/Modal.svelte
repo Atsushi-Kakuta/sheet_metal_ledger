@@ -10,8 +10,8 @@
 <Modal class="w-screen" title="入庫車新規作成" bind:open={createModal} autoclose>
     <form class="text-left">
         <div class="mb-6">
-            <Label for="first_name" class="mb-2">記入者</Label>
-            <Select placeholder="選択してください" name="example">
+            <Label for="entry_person" class="mb-2">記入者</Label>
+            <Select placeholder="選択してください" name="entry_person">
                 <option value="カクタナオミ">カクタナオミ</option>
                 <option value="カクタサトミ">カクタサトミ</option>
                 <option value="フジタトシオ">フジタトシオ</option>
@@ -34,8 +34,8 @@
             <Input type="text" id="car_model" placeholder="トヨタ プリウス" required/>
         </div>
         <div class="mb-6">
-            <Label for="delivery_date" class="mb-2">プレートNo</Label>
-            <Input type="text" id="delivery_date" placeholder="大阪559 さ 20-25" required/>
+            <Label for="plate_no" class="mb-2">プレートNo</Label>
+            <Input type="text" id="plate_no" placeholder="大阪559 さ 20-25" required/>
         </div>
         <div class="mb-6">
             <Label for="repair_point" class="mb-2">修理箇所</Label>
