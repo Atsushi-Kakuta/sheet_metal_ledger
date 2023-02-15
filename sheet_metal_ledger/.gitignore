@@ -1,5 +1,5 @@
 .DS_Store
-node_modules
+node_modules/
 /build
 /.svelte-kit
 /package
@@ -10,4 +10,4 @@ node_modules
 .output
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-../.idea/*
+.idea/
