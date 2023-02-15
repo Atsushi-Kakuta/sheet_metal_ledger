@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model CarInStock {
+    id Int @id @default(autoincrement())
+    entry_person String
+    customer String?
+    receipt_date DATE?
+    delivery_date DATE
+    car_model String?
+    plate_number String?
+    repair_point String
+    created_at DATE
+    updated_at DATE
+}
