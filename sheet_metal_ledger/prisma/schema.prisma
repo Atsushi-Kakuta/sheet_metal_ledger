@@ -14,11 +14,11 @@ model CarInStock {
     id Int @id @default(autoincrement())
     entry_person String
     customer String?
-    receipt_date DATE?
-    delivery_date DATE
+    receipt_date DateTime?
+    delivery_date DateTime
     car_model String?
     plate_number String?
     repair_point String
-    created_at DATE
-    updated_at DATE
+    created_at DateTime
+    updated_at DateTime
 }
