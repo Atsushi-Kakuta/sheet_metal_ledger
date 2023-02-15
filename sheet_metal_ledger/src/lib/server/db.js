@@ -1,17 +1,16 @@
 import {createRequire} from 'module';
-
+import {DATABASE_HOST, USER, PASSWORD, DATABASE} from "../../../.env";
 const require = createRequire(import.meta.url);
 const mysql = require('mysql');
 
 const client = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "sheet_metal_ledger"
+    host: DATABASE_HOST,
+    user: USER,
+    password: PASSWORD,
+    database: DATABASE
 });
 
 client.connect((err) => {
-
     if (err) throw err;
     console.log('接続完了');
 
@@ -21,3 +20,4 @@ client.connect((err) => {
         console.log(result);
     });
 });
+

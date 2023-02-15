@@ -14,7 +14,6 @@
             <Select placeholder="選択してください" name="entry_person">
                 <option value="カクタナオミ">カクタナオミ</option>
                 <option value="カクタサトミ">カクタサトミ</option>
-                <option value="フジタトシオ">フジタトシオ</option>
             </Select>
         </div>
         <div class="mb-6">
