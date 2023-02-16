@@ -8,7 +8,7 @@
         on:click={() => createModal = true}>新規作成
 </Button>
 <Modal class="w-screen" title="入庫車新規作成" bind:open={createModal} autoclose>
-    <form class="text-left">
+    <form class="text-left" method="POST" action="?/create">
         <div class="mb-6">
             <Label for="entry_person" class="mb-2">記入者</Label>
             <Select placeholder="選択してください" name="entry_person">

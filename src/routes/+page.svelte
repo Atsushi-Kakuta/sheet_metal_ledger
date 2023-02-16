@@ -10,14 +10,12 @@
     <title>Home</title>
     <meta name="description" content="Svelte demo app"/>
 </svelte:head>
-<!--<div class="md:container">-->
 
 <div class="md:container">
-
     <div class="py-8">
         <div class="flex flex-row justify-between w-full mb-1 sm:mb-0">
             <h1 class="text-3xl leading-tight">
-                入庫車管理表test
+                入庫車管理表
             </h1>
             <div class="text-end">
                 <form class="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">

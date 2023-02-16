@@ -14,11 +14,13 @@ model CarInStock {
     id Int @id @default(autoincrement())
     entry_person String
     customer String?
-    receipt_date DateTime?
-    delivery_date DateTime
+    receipt_date DateTime
+    delivery_date DateTime?
     car_model String?
     plate_number String?
     repair_point String
-    created_at DateTime
-    updated_at DateTime
+    created_at DateTime @default(now()) @map("created_at")
+    updated_at DateTime @default(now()) @updatedAt @map("updated_at")
+
+    @@map("car_in_stock")
 }
